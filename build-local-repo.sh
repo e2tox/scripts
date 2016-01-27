@@ -106,7 +106,7 @@ fi
 ### Download Maven
 if [ ! -f "./apache-maven-${MAVEN_VERSION}-bin.tar.gz" ]
 then
-	curl -jkSL http://www.us.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz -o apache-maven-${MAVEN_VERSION}-bin.tar.gz
+	curl -jkSL http://www.eu.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz -o apache-maven-${MAVEN_VERSION}-bin.tar.gz
 fi
 
 
