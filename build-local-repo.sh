@@ -28,6 +28,7 @@ MAVEN_VERSION=3.3.9
 
 APACHEDS_VERSION=2.0.0-M21
 
+MEMCACHED_VERSION=1.4.25
 
 ## Download JDK
 if [ ! -f "./jdk-${JDK_MAJOR}u${JDK_MINOR}-linux-x64.tar.gz" ]
@@ -116,5 +117,9 @@ then
 	curl -jkSL http://www.us.apache.org/dist//directory/apacheds/dist/${APACHEDS_VERSION}/apacheds-${APACHEDS_VERSION}.tar.gz -o apacheds-${APACHEDS_VERSION}.tar.gz
 fi
 
-
+### Download memcached
+if [ ! -f "./memcached-${MEMCACHED_VERSION}.tar.gz" ]
+then
+	curl -jkSL http://www.memcached.org/files/memcached-${MEMCACHED_VERSION}.tar.gz -o memcached-${MEMCACHED_VERSION}.tar.gz
+fi
 
