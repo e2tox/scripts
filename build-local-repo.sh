@@ -28,7 +28,7 @@ curl -jkSLH "Cookie: oraclelicense=accept-securebackup-cookie" http://download.o
 curl -jkSLH "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/${SERVER_JRE_MAJOR}u${SERVER_JRE_MINOR}-b${SERVER_JRE_BUILD}/server-jre-${SERVER_JRE_MAJOR}u${SERVER_JRE_MINOR}-linux-x64.tar.gz -o server-jre-${SERVER_JRE_MAJOR}u${SERVER_JRE_MINOR}-linux-x64.tar.gz
 
 ### Download TOMCAT
-curl -jkSL http://www.eu.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz -Lo apache-tomcat-${TOMCAT_VERSION}.tar.gz
+curl -jkSL http://www.eu.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz -o apache-tomcat-${TOMCAT_VERSION}.tar.gz
 
 ### Download NODEJS
 curl -jkSL https://nodejs.org/dist/v${NODEJS_VERSION}/node-v${NODEJS_VERSION}-linux-x64.tar.gz -o node-v${NODEJS_VERSION}-linux-x64.tar.gz
