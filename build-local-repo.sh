@@ -50,57 +50,57 @@ fi
 ### Download NODEJS
 if [ ! -f "./node-v${NODEJS_VERSION}-linux-x64.tar.gz" ]
 then
-	curl -jkSL https://nodejs.org/dist/v${NODEJS_VERSION}/node-v${NODEJS_VERSION}-linux-x64.tar.gz -o node-v${NODEJS_VERSION}-linux-x64.tar.gz
+	curl -jSL https://nodejs.org/dist/v${NODEJS_VERSION}/node-v${NODEJS_VERSION}-linux-x64.tar.gz -o node-v${NODEJS_VERSION}-linux-x64.tar.gz
 fi
 
 ### Download SBT
 if [ ! -f "./sbt-${SBT_VERSION}.tgz" ]
 then
-	curl -jkSL https://dl.bintray.com/sbt/native-packages/sbt/${SBT_VERSION}/sbt-${SBT_VERSION}.tgz -o sbt-${SBT_VERSION}.tgz
+	curl -jSL https://dl.bintray.com/sbt/native-packages/sbt/${SBT_VERSION}/sbt-${SBT_VERSION}.tgz -o sbt-${SBT_VERSION}.tgz
 fi
 
 ### Download Docker
 if [ ! -f "./docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm" ]
 then
-	curl -jkSL https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm -o docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm
+	curl -jSL https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm -o docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm
 fi
 
 if [ ! -f "./docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm" ]
 then
-	curl -jkSL https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm -o docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm
+	curl -jSL https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm -o docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm
 fi
 
 ### Download MONGODB
 if [ ! -f "./mongodb-enterprise-shell-${MONGODB_VERSION}-1.el7.x86_64.rpm" ]
 then
-	curl -jkSL https://repo.mongodb.com/yum/redhat/7Server/mongodb-enterprise/stable/x86_64/RPMS/mongodb-enterprise-shell-${MONGODB_VERSION}-1.el7.x86_64.rpm -o mongodb-enterprise-shell-${MONGODB_VERSION}-1.el7.x86_64.rpm
+	curl -jSL https://repo.mongodb.com/yum/redhat/7Server/mongodb-enterprise/stable/x86_64/RPMS/mongodb-enterprise-shell-${MONGODB_VERSION}-1.el7.x86_64.rpm -o mongodb-enterprise-shell-${MONGODB_VERSION}-1.el7.x86_64.rpm
 fi
 
 if [ ! -f "./mongodb-enterprise-tools-${MONGODB_VERSION}-1.el7.x86_64.rpm" ]
 then
-	curl -jkSL https://repo.mongodb.com/yum/redhat/7Server/mongodb-enterprise/stable/x86_64/RPMS/mongodb-enterprise-tools-${MONGODB_VERSION}-1.el7.x86_64.rpm -o mongodb-enterprise-tools-${MONGODB_VERSION}-1.el7.x86_64.rpm
+	curl -jSL https://repo.mongodb.com/yum/redhat/7Server/mongodb-enterprise/stable/x86_64/RPMS/mongodb-enterprise-tools-${MONGODB_VERSION}-1.el7.x86_64.rpm -o mongodb-enterprise-tools-${MONGODB_VERSION}-1.el7.x86_64.rpm
 fi
 
 if [ ! -f "./mongodb-enterprise-server-${MONGODB_VERSION}-1.el7.x86_64.rpm" ]
 then
-	curl -jkSL https://repo.mongodb.com/yum/redhat/7Server/mongodb-enterprise/stable/x86_64/RPMS/mongodb-enterprise-server-${MONGODB_VERSION}-1.el7.x86_64.rpm -o mongodb-enterprise-server-${MONGODB_VERSION}-1.el7.x86_64.rpm
+	curl -jSL https://repo.mongodb.com/yum/redhat/7Server/mongodb-enterprise/stable/x86_64/RPMS/mongodb-enterprise-server-${MONGODB_VERSION}-1.el7.x86_64.rpm -o mongodb-enterprise-server-${MONGODB_VERSION}-1.el7.x86_64.rpm
 fi
 
 if [ ! -f "./mongodb-enterprise-mongos-${MONGODB_VERSION}-1.el7.x86_64.rpm" ]
 then
-	curl -jkSL https://repo.mongodb.com/yum/redhat/7Server/mongodb-enterprise/stable/x86_64/RPMS/mongodb-enterprise-mongos-${MONGODB_VERSION}-1.el7.x86_64.rpm -o mongodb-enterprise-mongos-${MONGODB_VERSION}-1.el7.x86_64.rpm
+	curl -jSL https://repo.mongodb.com/yum/redhat/7Server/mongodb-enterprise/stable/x86_64/RPMS/mongodb-enterprise-mongos-${MONGODB_VERSION}-1.el7.x86_64.rpm -o mongodb-enterprise-mongos-${MONGODB_VERSION}-1.el7.x86_64.rpm
 fi
 
 ### Download TeamCity
 if [ ! -f "./TeamCity-${TEAMCITY_VERSION}.tar.gz" ]
 then
-	curl -jkSL https://download.jetbrains.com/teamcity/TeamCity-${TEAMCITY_VERSION}.tar.gz -o TeamCity-${TEAMCITY_VERSION}.tar.gz
+	curl -jSL https://download.jetbrains.com/teamcity/TeamCity-${TEAMCITY_VERSION}.tar.gz -o TeamCity-${TEAMCITY_VERSION}.tar.gz
 fi
 
 ### Download Ansible
 if [ ! -f "./ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm" ]
 then
-	curl -jkSL https://dl.fedoraproject.org/pub/epel/7/x86_64/a/ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm -o ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm
+	curl -jSL https://dl.fedoraproject.org/pub/epel/7/x86_64/a/ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm -o ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm
 fi
 
 ### Download Maven
