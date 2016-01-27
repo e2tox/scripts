@@ -62,12 +62,12 @@ fi
 ### Download Docker
 if [ ! -f "./docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm" ]
 then
-	curl -jSL https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm -o docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm
+	curl -jSL --ciphers ecdhe_rsa_aes_128_gcm_sha_256 https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm -o docker-engine-selinux-${DOCKER_VERSION}-1.el7.centos.noarch.rpm
 fi
 
 if [ ! -f "./docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm" ]
 then
-	curl -jSL https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm -o docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm
+	curl -jSL --ciphers ecdhe_rsa_aes_128_gcm_sha_256 https://yum.dockerproject.org/repo/main/centos/7/Packages/docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm -o docker-engine-${DOCKER_VERSION}-1.el7.centos.x86_64.rpm
 fi
 
 ### Download MONGODB
