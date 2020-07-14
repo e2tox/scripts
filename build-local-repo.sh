@@ -10,23 +10,23 @@ SERVER_JRE_MINOR=79
 SERVER_JRE_BUILD=15
 
 TOMCAT_MAJOR=8
-TOMCAT_VERSION=${TOMCAT_MAJOR}.0.30
+TOMCAT_VERSION=${TOMCAT_MAJOR}.5.57
 
-NODEJS_VERSION=5.5.0
+NODEJS_VERSION=12.18.2
 
 SBT_VERSION=0.13.9
 
 DOCKER_VERSION=1.9.1
 
-MONGODB_VERSION=3.2.1
+MONGODB_VERSION=4.2.8
 
-TEAMCITY_VERSION=9.1.5
+TEAMCITY_VERSION=9.1.7
 
-ANSIBLE_VERSION=1.9.4
+ANSIBLE_VERSION=2.9.10
 
-MAVEN_VERSION=3.3.9
+MAVEN_VERSION=3.6.3
 
-APACHEDS_VERSION=2.0.0-M21
+APACHEDS_VERSION=2.0.0-AM26
 
 MEMCACHED_VERSION=1.4.25
 
@@ -101,7 +101,7 @@ fi
 ### Download Ansible
 if [ ! -f "./ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm" ]
 then
-	curl -jSL https://dl.fedoraproject.org/pub/epel/7/x86_64/a/ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm -o ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm
+	curl -jSL https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/a/ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm -o ansible-${ANSIBLE_VERSION}-1.el7.noarch.rpm
 fi
 
 ### Download Maven
